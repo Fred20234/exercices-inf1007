@@ -3,8 +3,11 @@
 
 def majuscule(mot):
     # TODO completer la fonction ici
-    return mot
+    newWord = ""
+    for lettre in mot:
+        newWord += chr(ord(lettre) - 32)
 
+    return newWord
 
 if __name__ == '__main__':
     mots = [
